@@ -31,6 +31,6 @@ This needs to be done every time the system boots, so write a script to do that.
 ## Some nice references
 
 - [Using SCHED_DEADLINE](https://youtu.be/TDR-rgWopgM)
-- [uri Lelli's talk](https://youtu.be/AmyfSjRMcIY)
+- [Juri Lelli's talk](https://youtu.be/AmyfSjRMcIY)
 - [Realtime Linux checklist](https://youtu.be/NrjXEaTSyrw)
 - [Kernel documentation](https://docs.kernel.org/scheduler/sched-deadline.html)
