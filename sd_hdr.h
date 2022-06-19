@@ -1,3 +1,6 @@
+#ifndef __SD_HDR__
+#define __SD_HDR__
+
 #include <sys/syscall.h>
 #include <pthread.h>
 #include <linux/sched.h>
@@ -51,3 +54,6 @@ int sched_getattr(pid_t pid,
 	{
 		return syscall(__NR_sched_getattr, pid, attr, size, flags);
 	}
+
+
+#endif
