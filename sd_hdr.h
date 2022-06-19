@@ -12,17 +12,32 @@
 
 //Tested, works
 #ifdef __x86_64__
+
+#ifndef __NR_sched_setattr
 #define __NR_sched_setattr 314
+#endif
+
+#ifndef __NR_sched_getattr
 #define __NR_sched_getattr 315
+#endif
+
 #endif
 
 //These values were not correct for
 //NVIDIA Jetson boards, but maybe they work for other arm boards?
 //(correct values were defined in sched.h)
-//TODO: test on raspberry pi
+//Tested on raspberry pi
+
 #ifdef __arm__
+
+#ifndef __NR_sched_setattr
 #define __NR_sched_setattr 380
+#endif
+
+#ifndef __NR_sched_getattr
 #define __NR_sched_getattr 381
+#endif
+
 #endif
 
 
